@@ -89,7 +89,7 @@ This implementation plan breaks down the Cognito Auth Package into discrete, inc
     - Add error logging
     - _Requirements: 2.2, 2.7, 2.8, 11.1, 11.2, 11.3_
   
-  - [-] 5.5 Create Auth/handlers/login.ts
+  - [x] 5.5 Create Auth/handlers/login.ts
     - Implement handler function for user login
     - Parse and validate request body (username, password)
     - Call cognito.login() with validated parameters
@@ -105,7 +105,7 @@ This implementation plan breaks down the Cognito Auth Package into discrete, inc
     - Trigger error conditions
     - Verify error messages don't contain passwords or tokens
   
-  - [ ] 5.7 Create Auth/handlers/mfa.ts
+  - [x] 5.7 Create Auth/handlers/mfa.ts
     - Implement handler function for MFA verification
     - Parse and validate request body (session, mfaCode, username)
     - Call cognito.confirmMFA() with validated parameters
@@ -113,7 +113,7 @@ This implementation plan breaks down the Cognito Auth Package into discrete, inc
     - Add error logging
     - _Requirements: 2.4, 2.7, 2.8, 11.1, 11.2, 11.3_
   
-  - [ ] 5.8 Create Auth/handlers/set_new_password.ts
+  - [x] 5.8 Create Auth/handlers/set_new_password.ts
     - Implement handler function for password changes
     - Parse and validate request body (username, previousPassword, proposedPassword, session)
     - Validate new password meets policy requirements
@@ -122,7 +122,7 @@ This implementation plan breaks down the Cognito Auth Package into discrete, inc
     - Add error logging
     - _Requirements: 2.5, 2.7, 2.8, 11.1, 11.2, 11.3_
   
-  - [ ] 5.9 Create Auth/handlers/reset_password.ts
+  - [-] 5.9 Create Auth/handlers/reset_password.ts
     - Implement handler function for password reset
     - Support two operations: initiate reset and confirm reset
     - Parse and validate request body based on operation
@@ -143,7 +143,7 @@ This implementation plan breaks down the Cognito Auth Package into discrete, inc
     - Generate valid inputs for successful operations
     - Verify success operations produce log entries with context
 
-- [ ] 6. Checkpoint - Ensure all handler tests pass
+- [~] 6. Checkpoint - Ensure all handler tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 7. Compile TypeScript to JavaScript
