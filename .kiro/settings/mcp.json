@@ -2,15 +2,23 @@
   "mcpServers": {
     "aws-docs": {
       "command": "uvx",
-      "args": ["awslabs.aws-documentation-mcp-server@latest"],
+      "args": [
+        "awslabs.aws-documentation-mcp-server@latest"
+      ],
       "env": {
         "FASTMCP_LOG_LEVEL": "ERROR"
       },
-      "disabled": false
+      "disabled": false,
+      "autoApprove": [
+        "search_documentation",
+        "read_documentation"
+      ]
     },
     "cognito-config": {
       "command": "node",
-      "args": ["cognito-mcp/server.js"],
+      "args": [
+        "cognito-mcp/server.js"
+      ],
       "disabled": false
     }
   }
